@@ -1,0 +1,11 @@
+
+This project takes a COPA csv with the below format and creates a DB update script to be run direclty on the ChildPlus database.
+We only look at the immunication values and ignore everything else starting with Vision Date.
+
+ChildPlus ID,ChildPlus AlternateID,copa id,Child_Fname,Child_Lname,Child Birthdate,Polio1_date,Polio2_date,Polio3_date,Polio4_date,DTAP1_date,DTAP2_date,DTAP3_date,DTAP4_date,DTAP5_date,MMR1_date,MMR2_date,HIB1_date,HIB2_date,HIB3_date,HIB4_date,HepatitisB1_date,HepatitisB2_date,HepatitisB3_date,HepatitisB4_date,Varicella1_date,Varicella2_date,HepatitisA1_date,HepatitisA2_date,Pneumocal1_date,Pneumocal2_date,Pneumocal3_date,Pneumocal4_date,Pneumocal5_date,Rotavirus1_date,Rotavirus2_date,Rotavirus3_date,Vision_Date,vision status,Hearing_Date,hearing status,hemogolin/hematocrit,hemoglobin status,hemoglobin result,WC Exam HS Annual date,Dental Exam by Dentist date,Dental status,WC Exam HS Anuual Status
+10929,101931-AMCOPA,101931,Safi,Ahamad,3/12/2010,5/15/2010,7/30/2010,10/8/2010,7/20/2011,5/15/2010,7/30/2010,10/8/2010,7/20/2011,,3/24/2011,,5/15/2010,7/30/2010,10/8/2010,7/20/2011,4/17/2010,6/25/2010,2/15/2011,,3/24/2011,,7/20/2011,11/21/2012,5/15/2010,7/30/2010,10/5/2010,3/24/2011,,,,,3/11/2014,Unable/Rescreen/Near Cut-Off,3/11/2014,Unable/Rescreen/Near Cut-Off,9/12/2013,Ok/Normal,11.5/34.7,9/12/2013,9/13/2013,Ok/Normal,Ok/Normal
+10927,101932-AMCOPA,101932,Sifa,Ahamad,3/12/2010,5/15/2010,7/30/2010,10/8/2010,7/20/2011,5/15/2010,7/30/2010,10/8/2010,7/20/2011,,3/24/2011,,5/15/2010,7/30/2010,10/8/2010,7/20/2011,3/12/2010,4/17/2010,6/25/2010,2/15/2011,3/24/2011,,7/20/2011,11/13/2012,5/15/2010,7/30/2010,10/8/2010,3/24/2011,,,,,3/11/2014,Unable/Rescreen/Near Cut-Off,3/11/2014,Unable/Rescreen/Near Cut-Off,9/12/2013,Unable/Rescreen/Near Cut-Off,10.6/32.0,9/12/2013,9/13/2013,Ok/Normal,Ok/Normal
+11249,102098-AMCOPA,102098,Brandii,Alexander,4/29/2010,8/2/2010,9/3/2010,11/18/2010,5/23/2014,8/2/2010,9/3/2010,11/18/2010,5/23/2014,,4/29/2011,5/23/2014,8/2/2010,9/3/2010,11/18/2010,4/29/2011,4/30/2010,8/2/2010,11/18/2010,,4/29/2011,5/23/2014,4/30/2010,8/2/2010,8/2/2010,9/3/2010,11/18/2010,4/29/2011,,8/2/2010,9/3/2010,11/8/2010,3/11/2014,Ok/Normal,2/25/2014,Ok/Normal,5/3/2013,Ok/Normal,13.0/NO HCT,5/23/2014,2/28/2014,Ok/Normal,Ok/Normal
+
+usage:
+executable source.csv outfilename.txt
